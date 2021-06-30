@@ -26,8 +26,7 @@
 <footer>
   <nav class="navbar navbar-light bg-white mt-5 fixed-bottom">
     <div class="navbar-expand m-auto navbar-text">
-      Developed with <i class="fa fa-heart"></i> by <b>Sarathlal
-        Saseendran</b>
+      Developed with <i class="fa fa-heart"></i> by <b>Nguyen Dinh Hao</b>
     </div>
   </nav>
 </footer>
@@ -37,8 +36,8 @@
   <button class="btn btn-secondary" (click)="closeModal();">Close</button>
   <div style="margin-bottom: 10px;"></div>
   <div *ngFor="let msg of messages" [ngSwitch]="msg.tranType">
-    <h6 *ngSwitchCase="'Add'"><span class="badge badge-success">New employee '{{msg.employeeName}}' added</span></h6>
-    <h6 *ngSwitchCase="'Edit'"><span class="badge badge-info">Employee '{{msg.employeeName}}' edited</span></h6>
-    <h6 *ngSwitchCase="'Delete'"><span class="badge badge-warning">Employee '{{msg.employeeName}}' deleted</span></h6>
+    <h6 *ngSwitchCase="'Add'" class="text-info">New employee '{{msg.employeeName}}' added</h6>
+    <h6 *ngSwitchCase="'Edit'" class="text-danger">Employee '{{msg.employeeName}}' edited</h6>
+    <h6 *ngSwitchCase="'Delete'" class="text-warning">Employee '{{msg.employeeName}}' deleted</h6>
   </div>
 </app-modal>

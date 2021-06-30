@@ -28,6 +28,7 @@ export class NavMenuComponent implements OnInit {
 
   getNotificationMessage()
   {
+    
     this.notifiService.getNotificationMessage()
     .subscribe(m=>this.messages=m,
       err=>this.errorMessage=<any>err);
